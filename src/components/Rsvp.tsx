@@ -22,6 +22,16 @@ export default function Rsvp() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    const attendingText =
+      attending === "yes" ? "¡SÍ asistiré! ✅" : "No podré asistir ❌";
+    const guestsText =
+      attending === "yes" ? ` · Invitados: ${guests}` : "";
+    const messageText = message ? `\nMensaje: ${message}` : "";
+    const text = `¡Hola! Soy ${name || "un invitado"} 👋\nRSVP: ${attendingText}${guestsText}${messageText}`;
+    window.open(
+      `https://wa.me/${wedding.whatsapp}?text=${encodeURIComponent(text)}`,
+      "_blank",
+    );
     setSent(true);
     if (attending === "yes") fireConfetti();
   };

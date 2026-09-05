@@ -43,4 +43,5 @@ export const wedding = {
 
   hashtag: "#RYyYttusi",
   emails: "bodas@ejemplo.com",
+  whatsapp: "5356599731",
 };

@@ -106,16 +106,19 @@ export default function IntroLetter({ onOpen }: { onOpen: () => void }) {
         />
 
         {/* Crease lines from each corner meeting at the seal */}
-        <svg
+        <motion.svg
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
           className="pointer-events-none absolute inset-0 h-full w-full"
+          initial={false}
+          animate={opened ? { opacity: 0 } : { opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <line x1="0" y1="0" x2="50" y2="50" stroke="rgba(139,101,45,0.45)" strokeWidth="0.35" />
-          <line x1="100" y1="0" x2="50" y2="50" stroke="rgba(139,101,45,0.45)" strokeWidth="0.35" />
-          <line x1="0" y1="100" x2="50" y2="50" stroke="rgba(139,101,45,0.45)" strokeWidth="0.35" />
-          <line x1="100" y1="100" x2="50" y2="50" stroke="rgba(139,101,45,0.45)" strokeWidth="0.35" />
-        </svg>
+          <line x1="0" y1="0" x2="50" y2="50" stroke="rgba(139,101,45,0.18)" strokeWidth="0.3" />
+          <line x1="100" y1="0" x2="50" y2="50" stroke="rgba(139,101,45,0.18)" strokeWidth="0.3" />
+          <line x1="0" y1="100" x2="50" y2="50" stroke="rgba(139,101,45,0.18)" strokeWidth="0.3" />
+          <line x1="100" y1="100" x2="50" y2="50" stroke="rgba(139,101,45,0.18)" strokeWidth="0.3" />
+        </motion.svg>
       </div>
 
       {/* Ambient glow behind the seal */}

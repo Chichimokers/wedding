@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Story from "./components/Story";
 import Events from "./components/Events";
 import Location from "./components/Location";
+import Rsvp from "./components/Rsvp";
 import Footer from "./components/Footer";
 import Petals from "./components/Petals";
 
@@ -71,6 +72,7 @@ export default function App() {
         <Events />
         <Story />
         <Location />
+        <Rsvp />
       </main>
     </div>
   );
