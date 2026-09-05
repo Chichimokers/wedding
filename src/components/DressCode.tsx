@@ -5,7 +5,7 @@ export default function DressCode() {
   return (
     <section className="px-5 pb-24 sm:pb-32">
       <Reveal>
-        <div className="parchment mx-auto max-w-2xl rounded-2xl px-8 py-12 text-center sm:px-14">
+        <div className="parchment border border-gold/30 mx-auto max-w-2xl rounded-2xl px-8 py-12 text-center sm:px-14">
           <p className="font-display text-[11px] uppercase tracking-[0.45em] text-gold">
             Dress Code
           </p>

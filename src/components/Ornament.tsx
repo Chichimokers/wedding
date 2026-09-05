@@ -30,12 +30,10 @@ export function SectionHeading({
   eyebrow,
   title,
   subtitle,
-  dark = true,
 }: {
   eyebrow: string;
   title: string;
   subtitle?: string;
-  dark?: boolean;
 }) {
   return (
     <motion.div
@@ -45,27 +43,15 @@ export function SectionHeading({
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <p
-        className={`font-display text-[11px] uppercase tracking-[0.45em] ${
-          dark ? "text-goldLight" : "text-gold"
-        }`}
-      >
+      <p className="font-display text-[11px] uppercase tracking-[0.45em] text-gold">
         {eyebrow}
       </p>
-      <h2
-        className={`mt-4 font-script text-4xl sm:text-5xl ${
-          dark ? "text-parchment" : "text-ink"
-        }`}
-      >
+      <h2 className="mt-4 font-display text-4xl font-bold italic text-ink sm:text-5xl">
         {title}
       </h2>
-      <Flourish className={`mt-5 ${dark ? "text-goldLight" : "text-gold"}`} />
+      <Flourish className="mt-5 text-gold" />
       {subtitle && (
-        <p
-          className={`mt-4 font-body text-base italic leading-relaxed sm:text-lg ${
-            dark ? "text-parchment/70" : "text-inkSoft"
-          }`}
-        >
+        <p className="mt-4 font-body text-base italic leading-relaxed text-inkSoft sm:text-lg">
           {subtitle}
         </p>
       )}

@@ -4,25 +4,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#2b1d12",
-        inkSoft: "#4a3624",
-        parchment: "#f4e9d2",
-        parchmentDark: "#e6d3ad",
-        wax: "#8f1f2e",
-        waxDark: "#6d1420",
-        waxLight: "#c0392b",
-        gold: "#b8860b",
-        goldLight: "#d4af37",
-        night: "#17100a",
+        ink: "#342424",
+        inkSoft: "#4A3B3A",
+        parchment: "#FDF8F3",
+        parchmentDark: "#F7EAE3",
+        wax: "#C25A73",
+        waxDark: "#A94A62",
+        waxLight: "#D97A8E",
+        gold: "#C9A96E",
+        goldLight: "#DCC49A",
+        night: "#FFFFFF",
       },
       fontFamily: {
-        display: ["Cinzel", "serif"],
-        body: ["Cormorant Garamond", "serif"],
+        display: ["Playfair Display", "serif"],
+        body: ["Montserrat", "sans-serif"],
         script: ["Great Vibes", "cursive"],
       },
       boxShadow: {
-        seal: "0 10px 30px rgba(0,0,0,0.55), inset 0 -6px 12px rgba(0,0,0,0.45), inset 0 6px 14px rgba(255,255,255,0.25)",
-        card: "0 24px 60px -18px rgba(23,16,10,0.45)",
+        seal: "0 10px 30px rgba(52,36,36,0.35), inset 0 -6px 12px rgba(0,0,0,0.25), inset 0 6px 14px rgba(255,255,255,0.5)",
+        card: "0 24px 60px -18px rgba(74,59,58,0.25)",
       },
       keyframes: {
         floaty: {
@@ -33,10 +33,15 @@ export default {
           "0%": { backgroundPosition: "-200% center" },
           "100%": { backgroundPosition: "200% center" },
         },
+        sway: {
+          "0%, 100%": { transform: "rotate(-1.5deg) translateY(0px)" },
+          "50%": { transform: "rotate(2deg) translateY(-6px)" },
+        },
       },
       animation: {
         floaty: "floaty 6s ease-in-out infinite",
         shimmer: "shimmer 3s linear infinite",
+        sway: "sway 7s ease-in-out infinite",
       },
     },
   },

@@ -2,20 +2,15 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "lenis";
 import IntroLetter from "./components/IntroLetter";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Story from "./components/Story";
 import Events from "./components/Events";
 import Location from "./components/Location";
-import DressCode from "./components/DressCode";
-import Rsvp from "./components/Rsvp";
 import Footer from "./components/Footer";
 import Petals from "./components/Petals";
-import { startMusic, stopMusic } from "./lib/music";
 
 export default function App() {
   const [open, setOpen] = useState(false);
-  const [musicOn, setMusicOn] = useState(false);
 
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.09, smoothWheel: true });
@@ -57,24 +52,12 @@ export default function App() {
 
   const handleOpen = () => {
     setOpen(true);
-    startMusic();
-    setMusicOn(true);
-  };
-
-  const toggleMusic = () => {
-    if (musicOn) {
-      stopMusic();
-      setMusicOn(false);
-    } else {
-      startMusic();
-      setMusicOn(true);
-    }
   };
 
   return (
     <div className="relative min-h-screen">
-      {/* Film vignette */}
-      <div className="pointer-events-none fixed inset-0 z-[5] bg-[radial-gradient(ellipse_at_center,transparent_55%,rgba(10,6,3,0.55))]" />
+      {/* Soft rose-gold vignette */}
+      <div className="pointer-events-none fixed inset-0 z-[5] bg-[radial-gradient(ellipse_at_center,transparent_60%,rgba(201,169,110,0.16))]" />
 
       <AnimatePresence>
         {!open && <IntroLetter onOpen={handleOpen} />}
@@ -82,16 +65,13 @@ export default function App() {
 
       {open && <Petals />}
 
-      <Navbar musicOn={musicOn} onToggleMusic={toggleMusic} />
       <main>
+        <Footer />
         <Hero />
-        <Story />
         <Events />
+        <Story />
         <Location />
-        <DressCode />
-        <Rsvp />
       </main>
-      <Footer />
     </div>
   );
 }

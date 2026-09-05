@@ -3,8 +3,8 @@ import { wedding } from "../data/wedding";
 
 const LINKS = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Historia", href: "#historia" },
-  { label: "Eventos", href: "#eventos" },
+  { label: "Cronograma", href: "#cronograma" },
+  { label: "Mensaje", href: "#mensaje" },
   { label: "Ubicación", href: "#ubicacion" },
   { label: "RSVP", href: "#rsvp" },
 ];
@@ -23,11 +23,11 @@ export default function Navbar({
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
     >
-      <div className="border-b border-goldLight/20 bg-night/70 backdrop-blur-md">
+      <div className="border-b border-gold/30 bg-white/80 shadow-[0_10px_30px_-20px_rgba(74,59,58,0.35)] backdrop-blur-md">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
           <a
             href="#inicio"
-            className="font-display text-sm font-semibold uppercase tracking-[0.3em] text-goldLight"
+            className="font-display text-[11px] font-bold uppercase tracking-[0.25em] text-waxDark sm:text-sm sm:tracking-[0.3em]"
           >
             {wedding.monogram}
           </a>
@@ -37,7 +37,7 @@ export default function Navbar({
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="font-display text-[11px] uppercase tracking-[0.25em] text-parchment/80 transition-colors hover:text-goldLight"
+                  className="font-display text-[11px] uppercase tracking-[0.25em] text-inkSoft/80 transition-colors hover:text-wax"
                 >
                   {l.label}
                 </a>
@@ -53,8 +53,8 @@ export default function Navbar({
               title={musicOn ? "Pausar música" : "Reproducir música"}
               className={`flex h-9 w-9 items-center justify-center rounded-full border transition-all ${
                 musicOn
-                  ? "border-goldLight/70 bg-goldLight/15 text-goldLight"
-                  : "border-goldLight/30 text-parchment/60 hover:text-goldLight"
+                  ? "border-wax/70 bg-wax/10 text-wax"
+                  : "border-gold text-inkSoft/70 hover:text-wax"
               }`}
             >
               <svg
@@ -72,7 +72,7 @@ export default function Navbar({
 
             <a
               href="#rsvp"
-              className="rounded-full border border-goldLight/60 px-4 py-1.5 font-display text-[11px] uppercase tracking-[0.2em] text-goldLight transition-colors hover:bg-goldLight hover:text-night"
+              className="rounded-full bg-wax px-4 py-1.5 font-display text-[11px] uppercase tracking-[0.2em] text-white transition-colors hover:bg-waxLight"
             >
               Confirmar
             </a>

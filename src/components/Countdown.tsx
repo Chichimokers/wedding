@@ -32,12 +32,12 @@ export default function Countdown() {
       {cells.map((c) => (
         <div
           key={c.label}
-          className="flex min-w-[70px] flex-col items-center rounded-lg border border-goldLight/30 bg-night/40 px-3 py-3 backdrop-blur-sm sm:min-w-[92px] sm:px-5 sm:py-4"
+          className="flex min-w-[70px] flex-col items-center rounded-lg border border-gold/30 bg-white/70 px-3 py-3 shadow-card backdrop-blur-sm sm:min-w-[92px] sm:px-5 sm:py-4"
         >
-          <span className="font-display text-3xl font-semibold tabular-nums text-goldLight sm:text-4xl">
+          <span className="font-display text-3xl font-black tabular-nums text-wax sm:text-4xl">
             {String(c.value).padStart(2, "0")}
           </span>
-          <span className="mt-1 font-display text-[9px] uppercase tracking-[0.3em] text-parchment/60 sm:text-[10px]">
+          <span className="mt-1 font-display text-[9px] uppercase tracking-[0.3em] text-inkSoft/70 sm:text-[10px]">
             {c.label}
           </span>
         </div>

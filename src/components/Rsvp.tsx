@@ -35,10 +35,10 @@ export default function Rsvp() {
       />
 
       <Reveal>
-        <div className="parchment mx-auto mt-14 max-w-xl rounded-2xl px-6 py-10 sm:px-12">
+        <div className="parchment border border-gold/30 mx-auto mt-14 max-w-xl rounded-2xl px-6 py-10 sm:px-12">
           {sent ? (
             <div className="text-center">
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-wax text-3xl text-parchment shadow-seal">
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-wax text-3xl text-white shadow-seal">
                 {attending === "yes" ? "❤" : "🙏"}
               </div>
               <h3 className="mt-6 font-script text-4xl text-ink">
@@ -58,7 +58,7 @@ export default function Rsvp() {
                   setAttending(null);
                   setMessage("");
                 }}
-                className="mt-8 rounded-full border border-ink/40 px-6 py-2 font-display text-[11px] uppercase tracking-[0.25em] text-ink transition-colors hover:bg-ink hover:text-parchment"
+                className="mt-8 rounded-full border border-ink/40 px-6 py-2 font-display text-[11px] uppercase tracking-[0.25em] text-ink transition-colors hover:bg-ink hover:text-white"
               >
                 Enviar otra confirmación
               </button>
@@ -90,7 +90,7 @@ export default function Rsvp() {
                     onClick={() => setAttending("yes")}
                     className={`rounded-lg border px-4 py-3 font-display text-sm uppercase tracking-widest transition-all ${
                       attending === "yes"
-                        ? "border-wax bg-wax text-parchment shadow-lg"
+                        ? "border-wax bg-wax text-white shadow-lg"
                         : "border-ink/25 text-inkSoft hover:border-wax"
                     }`}
                   >
@@ -101,7 +101,7 @@ export default function Rsvp() {
                     onClick={() => setAttending("no")}
                     className={`rounded-lg border px-4 py-3 font-display text-sm uppercase tracking-widest transition-all ${
                       attending === "no"
-                        ? "border-ink bg-ink text-parchment shadow-lg"
+                        ? "border-ink bg-ink text-white shadow-lg"
                         : "border-ink/25 text-inkSoft hover:border-ink"
                     }`}
                   >
@@ -147,7 +147,7 @@ export default function Rsvp() {
               <button
                 type="submit"
                 disabled={!attending}
-                className="w-full rounded-full bg-wax py-3.5 font-display text-sm uppercase tracking-[0.3em] text-parchment shadow-lg transition-transform hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-40"
+                className="w-full rounded-full bg-wax py-3.5 font-display text-sm uppercase tracking-[0.3em] text-white shadow-lg transition-transform hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-40"
               >
                 Enviar confirmación
               </button>
