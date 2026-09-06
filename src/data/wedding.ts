@@ -22,7 +22,7 @@ export const wedding = {
     "Calle Villa Rosa #11508 entre Línea y Final, Reparto Las Granjas, Cotorro",
 
   schedule: [
-    { time: "2:30 PM", label: "Llegada de los invitados", icon: "welcome" },
+    { time: "2:30 PM", label: "Cóctel de bienvenida", icon: "welcome" },
     { time: "3:00 PM", label: "Ceremonia", icon: "rings" },
     { time: "4:30 PM", label: "Buffet", icon: "buffet" },
     { time: "5:00 PM", label: "Juegos y celebración", icon: "games" },
@@ -37,7 +37,7 @@ export const wedding = {
   },
 
   rsvp: {
-    deadline: "Antes del 10 de Septiembre",
+    deadline: "Antes del 15 de Septiembre",
     note: "Confirma tu asistencia para que podamos reservarte un lugar en la mesa.",
   },
 

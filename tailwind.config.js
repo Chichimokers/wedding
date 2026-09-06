@@ -6,8 +6,8 @@ export default {
       colors: {
         ink: "#342424",
         inkSoft: "#4A3B3A",
-        parchment: "#FDF8F3",
-        parchmentDark: "#F7EAE3",
+        parchment: "#FFFFFF",
+        parchmentDark: "#FDF8F3",
         wax: "#C25A73",
         waxDark: "#A94A62",
         waxLight: "#D97A8E",

@@ -1,5 +1,6 @@
 import { wedding } from "../data/wedding";
 import { CornerSpray, GoldArc, GoldOrnament, HeartDot, InlineHeart } from "./Floral";
+import Countdown from "./Countdown";
 
 export default function Hero() {
   const { dateDay, tagline, venueTag } = wedding;
@@ -67,6 +68,10 @@ export default function Hero() {
             );
           })}
         </p>
+
+        <div className="mt-8">
+          <Countdown />
+        </div>
 
         <div className="mt-6">
           <GoldOrnament />

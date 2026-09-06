@@ -1,20 +1,20 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
 
-const COLORS = ["#d97a8e", "#e8a1b0", "#f0a98f", "#e8c4c9", "#c9a96e"];
+const COLORS = ["#d97a8e", "#e8a1b0", "#d97a8e", "#e8c4c9", "#e8a1b0", "#c9a96e"];
 
-export default function Petals({ count = 5 }: { count?: number }) {
+export default function Petals({ count = 10 }: { count?: number }) {
   const petals = useMemo(
     () =>
       Array.from({ length: count }, (_, i) => ({
-        left: 15 + Math.random() * 70,
-        size: 5 + Math.random() * 5,
-        duration: 12 + Math.random() * 9,
-        delay: -Math.random() * 20,
-        sway: 30 + Math.random() * 60,
-        rotate: 120 + Math.random() * 240,
+        left: 8 + Math.random() * 84,
+        size: 6 + Math.random() * 6,
+        duration: 11 + Math.random() * 8,
+        delay: -Math.random() * 18,
+        sway: 35 + Math.random() * 60,
+        rotate: 140 + Math.random() * 220,
         color: COLORS[i % COLORS.length],
-        opacity: 0.25 + Math.random() * 0.2,
+        opacity: 0.3 + Math.random() * 0.25,
       })),
     [count],
   );
