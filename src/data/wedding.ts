@@ -18,8 +18,7 @@ export const wedding = {
   venueAddress:
     "Calle Villa Rosa #11508 entre Línea y Final, Reparto Las Granjas, Cotorro",
 
-  mapQuery:
-    "Calle Villa Rosa #11508 entre Línea y Final, Reparto Las Granjas, Cotorro",
+  mapQuery: "23.05333,-82.28449",
 
   schedule: [
     { time: "2:30 PM", label: "Cóctel de bienvenida", icon: "welcome" },
