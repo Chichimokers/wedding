@@ -14,11 +14,11 @@ export default function Footer() {
         <HeartDot />
 
         <div className="mt-4 flex flex-col items-center gap-1">
-          <span className="font-display text-5xl font-black text-gold sm:text-6xl">
+          <span className="font-display text-4xl font-black text-gold sm:text-5xl">
             {groom}
           </span>
           <span className="font-script text-3xl text-gold">&amp;</span>
-          <span className="font-display text-5xl font-black text-gold sm:text-6xl">
+          <span className="font-display text-4xl font-black text-gold sm:text-5xl">
             {bride}
           </span>
         </div>

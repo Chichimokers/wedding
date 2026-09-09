@@ -1,7 +1,7 @@
 export const wedding = {
-  groom: "RY",
+  groom: "Rysheila",
   bride: "YTTUSI",
-  monogram: "RY & YTTUSI",
+  monogram: "Rysheila & YTTUSI",
   dateISO: "2026-09-26T14:30:00",
   dateLineFull: "26 · SEPTIEMBRE · 2026",
   dateDay: "26",
@@ -40,7 +40,7 @@ export const wedding = {
     note: "Confirma tu asistencia para que podamos reservarte un lugar en la mesa.",
   },
 
-  hashtag: "#RYyYttusi",
+  hashtag: "#RysheilaYttusi",
   emails: "bodas@ejemplo.com",
   whatsapp: "5356599731",
 };

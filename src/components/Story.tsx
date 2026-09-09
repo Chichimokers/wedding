@@ -66,7 +66,7 @@ export default function Story() {
         <div className="relative mx-auto mt-8 h-[280px] w-[240px] overflow-hidden border-2 border-gold/50 bg-parchmentDark" style={{ borderRadius: "50% 50% 0 0 / 35% 35% 0 0" }}>
           <img
             src="/pareja.jpg"
-            alt="RY & Yttusi"
+            alt="Rysheila & Yttusi"
             className="h-full w-full object-cover object-top"
           />
         </div>
